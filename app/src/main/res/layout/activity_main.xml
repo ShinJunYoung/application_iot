@@ -3,44 +3,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-<!--    android:weightSum="3">-->
+    android:orientation="vertical"
+    android:weightSum="3">
 
     <!--제스쳐로 입력할때는 View를 사용한다-->
 
 
     <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/floor_400" />
+
+<!--        <com.example.myapplication3.DotView-->
+<!--            android:id="@+id/dot_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scaleType="fitXY"/>-->
 
     </FrameLayout>
 
-    <!--    <View-->
-    <!--        android:id="@+id/view2"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="0dp"-->
-    <!--        android:layout_weight="1"-->
-    <!--        android:background="#FF9800" />-->
 
-<!--    <ScrollView-->
-<!--        android:id="@+id/scrollView1"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight="0.5">-->
-
-<!--        &lt;!&ndash;무슨 제스쳐를 했는지 설명하기 위한 TextView&ndash;&gt;-->
-<!--        <TextView-->
-<!--            android:id="@+id/textView1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="#FFFFFFFF" />-->
-<!--    </ScrollView>-->
 </LinearLayout>
